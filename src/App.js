@@ -1,6 +1,6 @@
 import './App.css';
 // import ParticlesContainer from './components/ParticlesContainer';
-import RepoPage from './components/RepoContainer';
+import RepoContainer from './components/RepoContainer';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className="particles">
         {/* <ParticlesContainer /> */}
       </div>
-      <RepoPage />
+      <RepoContainer />
     </>
     
   );

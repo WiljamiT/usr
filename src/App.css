@@ -1,0 +1,21 @@
+.repo_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust as needed */
+    gap: 20px; /* Adjust the gap between cards as needed */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.repo_card {
+    border: 1px solid black;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    min-height: 350px;
+    height: auto;
+}
