@@ -1,6 +1,13 @@
 .particles-full {
-    width: 100%;
+    width: 60%;
     height: 100%;
     position: absolute;
     transform: translateZ(0);
+
+    
+    margin-left: 40%;
+    
+    top: -1px;
+
+    z-index: -2;
 }

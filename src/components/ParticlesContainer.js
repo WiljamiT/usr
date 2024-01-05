@@ -13,7 +13,9 @@ const ParticlesContainer = () => {
         console.log('Particles loaded successfully!');
     }, []);
 
-    return ( <Particles 
+    return ( 
+        <>
+    <Particles 
         id='tsparticles' 
         init={particlesInit} 
         loaded={particlesLoaded}
@@ -50,10 +52,10 @@ const ParticlesContainer = () => {
             },
             particles: {
                 color: {
-                    value: '#FF0000'
+                    value: '#FFB30D'
                 },
                 links: {
-                    color: '#FF0000',
+                    color: '#FFB30D',
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -92,6 +94,7 @@ const ParticlesContainer = () => {
             detectRetina: true,
         }} 
     />
+    </>
     );
 };
 
