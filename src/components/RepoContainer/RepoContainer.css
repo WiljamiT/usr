@@ -1,0 +1,48 @@
+.repo_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 10rem 0rem 10rem;
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.repos button {
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.repos button.yellow {
+    background: rgb(230, 230, 8);
+}
+
+.repos button.cyan {
+    background: rgb(8, 230, 230);
+}
+
+@media only screen and (max-width: 450px) {
+    .repo_container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        margin: 0rem 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .repos {
+        padding-top: 10rem;
+    }
+}
+

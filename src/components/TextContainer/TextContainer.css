@@ -1,0 +1,45 @@
+.text-container {
+    display: flex;
+    height: auto;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+.text-container h1 {
+    margin: 10rem 0 0 2rem;
+}
+
+.text-container p {
+    color: #7A7A7A;
+    margin: 2rem;
+    width: 1000px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: left;
+        width: auto;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5rem 0 10rem 0;
+    }
+
+    
+}

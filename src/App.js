@@ -1,24 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import ParticlesContainer from './components/ParticlesContainer';
-import SideNavigation from './components/SideNavigation';
-import TextContainer from './components/TextContainer';
-// import RepoContainer from './components/RepoContainer';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import RepoContainer from './components/RepoContainer/RepoContainer';
+import SideNavigation from './components/SideNavigation/SideNavigation';
+import TextContainer from './components/TextContainer/TextContainer';
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <div className="main-content">
-      <TextContainer />
-      <ParticlesContainer />
+    <div className="App">
+      <Navbar />
+        <div className="header-content">
+          <TextContainer />
+          
+          <SideNavigation />
+        </div>
+      <RepoContainer />
+      <About />
+      <Footer />
     </div>
-    <SideNavigation />
-
-
-      {/* <RepoContainer /> */}
-    </>
-    
   );
 }
 

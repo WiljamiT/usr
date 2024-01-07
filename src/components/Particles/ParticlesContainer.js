@@ -14,7 +14,8 @@ const ParticlesContainer = () => {
     }, []);
 
     return ( 
-        <>
+        <aside className="particles-container">
+        <div>
     <Particles 
         id='tsparticles' 
         init={particlesInit} 
@@ -94,7 +95,9 @@ const ParticlesContainer = () => {
             detectRetina: true,
         }} 
     />
-    </>
+    </div>
+    <img src='./images/profile.png' alt="profile"/>
+    </aside>
     );
 };
 

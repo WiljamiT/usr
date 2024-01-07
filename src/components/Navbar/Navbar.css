@@ -1,0 +1,127 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    height: 3rem;
+    position: absolute;
+    width: 100%;
+}
+
+nav i {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    z-index: 2;
+
+    margin-right: 10rem;
+}
+
+nav i:hover {
+    cursor: pointer;
+    color: #FFB30D;
+    transition-duration: 0.5s;
+}
+
+nav h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 10rem;
+}
+
+nav h3 b {
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-right: 1rem;
+    
+}
+
+.dropdown-wrapper button {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: -70px;
+
+    background: #7A7A7A;
+    padding: 1rem 0.5rem;
+    border-radius: 7px;
+}
+
+.dropdown svg {
+    margin-right: 10px;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust this value to position the triangle properly */
+    left: 72%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #7A7A7A transparent;
+}
+
+.dropdown i {
+    font-size: 1rem;
+    position: relative;
+    left: 10px;
+}
+
+
+
+.dropdown a {
+    display: flex;
+    margin: 5px;
+}
+
+.dropdown a:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav i {
+        margin-right: 0.5rem;
+    }
+
+    nav h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-left: 0.5rem;
+    }
+
+}
