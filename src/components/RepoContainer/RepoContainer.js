@@ -49,7 +49,7 @@ function RepoContainer() {
 
   return (
     <>
-      <section className="repos">
+      <section className="repos" id="repos">
       <h2>{texts.repos.header}</h2>
       <motion.div>
         <AnimatedButton

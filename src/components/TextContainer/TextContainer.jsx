@@ -6,7 +6,7 @@ import ParticlesContainer from '../Particles/ParticlesContainer';
 const TextContainer = () => {
   return (
     <section className="text-container">
-      <div className="infos">
+      <div className="infos" id="header-content">
         <h1>{texts.infos.greeting}</h1>
         <p>{texts.infos.about}</p>
       </div>

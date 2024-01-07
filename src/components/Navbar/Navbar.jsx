@@ -39,7 +39,7 @@ const Navbar = () => {
         {isMobile ? (
           <button onClick={toggleDropdown}><IoMdMenu /></button>
         ) : (
-          <a href="linkedin.com">
+          <a href={texts.navbar.link} target="_blank" rel="noopener noreferrer">
             <i>
               <FaLinkedin />
             </i>
@@ -54,13 +54,13 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <a>
+              <a href="#header-content">
                 <i><FaHome style={{ fontSize: "1.5rem"}} />Home</i>
               </a>
-              <a>
+              <a href="#repos">
                   <i><GrProjects style={{ fontSize: "1.5rem"}} />Projektit</i>
               </a>
-              <a>
+              <a href="#about">
                   <i><SiAboutdotme style={{ fontSize: "1.5rem"}} />About</i>
               </a>
             </motion.div>

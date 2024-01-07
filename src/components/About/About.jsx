@@ -31,7 +31,7 @@ const getColor = (name) => {
 
 const About = () => {
   return (
-    <article>
+    <article id="about">
       <h1>{texts.about.header}</h1>
       <div className="logos-container">
         {Object.entries(logos.logoUrls).map(([key, { name, url, experience }]) => (

@@ -9,13 +9,13 @@ const SideNavigation = () => {
     <nav>
       <div className="side-nav">
         <div className="side-nav-links">
-          <a>
+          <a href="#header-content">
               <i><FaHome /></i>
           </a>
-          <a>
+          <a href="#repos">
               <i><GrProjects /></i>
           </a>
-          <a>
+          <a href="#about"> 
               <i><SiAboutdotme /></i>
           </a>
         </div>

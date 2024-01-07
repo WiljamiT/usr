@@ -5,7 +5,9 @@ import texts from '../../text.json';
 const Footer = () => {
   return (
     <footer>
-      <i>{texts.footer.name}</i>
+      <div>
+        <i>{texts.footer.name}</i>
+      </div>
     </footer>
   )
 }

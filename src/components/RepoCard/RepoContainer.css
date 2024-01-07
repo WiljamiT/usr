@@ -33,4 +33,8 @@
   .repos {
       padding-top: 10rem;
   }
+
+  .repo_card img {
+    object-fit: contain;
+  }
 }
