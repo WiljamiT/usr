@@ -39,7 +39,7 @@ const Navbar = () => {
         {isMobile ? (
           <button onClick={toggleDropdown}><IoMdMenu /></button>
         ) : (
-          <a href={texts.navbar.link} target="_blank" rel="noopener noreferrer">
+          <a href={texts.navbar.link || "https://fi.linkedin.com/in/wiljami-takkinen-9920a2208"} target="_blank" rel="noopener noreferrer">
             <i>
               <FaLinkedin />
             </i>
